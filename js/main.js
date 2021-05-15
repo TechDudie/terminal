@@ -1,8 +1,4 @@
-// prevent text from being deleted
-// https://stackoverflow.com/questions/36318658/how-to-prevent-a-user-from-removing-the-first-three-characters-in-a-text-input
-// hack, needs to be replaced because user input cant be deleted
-$(document).on('keydown', function (e) {
-  if (e.keyCode == 8 && $('#Lab').is(":focus")) {
-      e.preventDefault();
-  }
-});
+function print(text) {
+  document.getElementById("terminal").value += text;
+}
+print("Hello World!");
