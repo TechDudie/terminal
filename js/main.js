@@ -6,6 +6,8 @@ document.addEventListener("keydown",  e => {
     e.preventDefault();
   }
   if (e.keyCode === 13)  {
+    e.preventDefault();
+    document.getElementById("terminal").value += "\n";
     command();
   }
 });
