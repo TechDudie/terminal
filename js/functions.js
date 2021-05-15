@@ -1,8 +1,8 @@
 function print(text) {
   document.getElementById("terminal").value += text;
 }
-function command() {
-  var text = "\n" + username + "@" + hostname + " " + directory + " $ ";
+function command(output) {
+  var text = "\n" + output + "\n" + username + "@" + hostname + " " + directory + " $ ";
   document.getElementById("terminal").value += text;
 }
 function setup() {
