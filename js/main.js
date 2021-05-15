@@ -8,6 +8,7 @@ document.addEventListener("keydown",  e => {
   } else if (e.keyCode === 13)  {
     e.preventDefault();
     cmd = cmd.toLowerCase();
+    run(cmd);
     command();
     cmd = "";
   } else {
