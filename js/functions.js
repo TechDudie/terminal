@@ -17,7 +17,7 @@ function cd(dir, param) {
   if (dir.charAt(0) == "/") {
     dir = param;
   } else {
-    dir += param;
+    dir += "/" + param;
   }
   return dir;
 }
