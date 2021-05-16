@@ -5,6 +5,10 @@ function command(output) {
   var text = "\n" + output + "\n" + username + "@" + hostname + " " + directory + " $ ";
   document.getElementById("terminal").value += text;
 }
+function empty() {
+  var text = "\n" + username + "@" + hostname + " " + directory + " $ ";
+  document.getElementById("terminal").value += text;
+}
 function setup() {
   var text = username + "@" + hostname + " " + directory + " $ ";
   document.getElementById("terminal").value += text;
