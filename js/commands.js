@@ -11,4 +11,5 @@ function run(cmd) {
     default:
       output = "Unknown command";
   }
+  return output;
 }
