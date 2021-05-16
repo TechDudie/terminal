@@ -14,6 +14,9 @@ function setup() {
   document.getElementById("terminal").value += text;
 }
 function cd(dir, param) {
+  if (dir == undefined) {
+    return "~";
+  }
   if (dir.charAt(0) == "/") {
     dir = param;
   } else {
