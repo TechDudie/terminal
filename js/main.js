@@ -9,11 +9,12 @@ document.addEventListener("keydown",  e => {
     e.preventDefault();
     cmd = cmd.toLowerCase();
     var output = run(cmd);
-    if (output == "" || output == undefined) {
-      empty();
-    } else {
-      command(output);
-    }
+    alert(output); //debug
+    //if (output == "" || output == undefined) {
+    //  empty();
+    //} else {
+    //  command(output);
+    //}
     cmd = "";
   } else {
     cmd += String.fromCharCode(e.keyCode);
