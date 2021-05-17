@@ -11,6 +11,9 @@ function run(cmd) {
     case "echo":
       output = tokens[1];
       break;
+    case "clear":
+      document.getElementById("terminal").value = "";
+      break;
     default:
       output = "Unknown command";
   }
