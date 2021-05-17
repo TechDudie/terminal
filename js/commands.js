@@ -8,6 +8,9 @@ function run(cmd) {
     case "cd":
       directory = cd(directory,tokens[1]);
       break;
+    case "echo":
+      output = tokens[1];
+      break;
     default:
       output = "Unknown command";
   }
