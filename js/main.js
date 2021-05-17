@@ -9,7 +9,6 @@ document.addEventListener("keydown",  e => {
     e.preventDefault();
     cmd = cmd.toLowerCase();
     var output = run(cmd);
-    alert(output); //debug
     if (output == "" || output == "undefined" || output == undefined) {
       empty();
     } else {
