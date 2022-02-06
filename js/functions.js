@@ -6,7 +6,7 @@ function command(output) {
   document.getElementById("terminal").value += text;
 }
 function empty() {
-  var text = "\n" + username + "@" + hostname + " " + directory + " $ ";
+  var text = username + "@" + hostname + " " + directory + " $ ";
   document.getElementById("terminal").value += text;
 }
 function setup() {
